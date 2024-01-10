@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python robs.py
+python3 robs.py
