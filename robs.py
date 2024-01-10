@@ -16,7 +16,7 @@ def display_random_color():
         print(f'{part}の色: {random_color}')
 
     random_category = random.choice(category)
-    print(f'最後のスタイル: {random_category}')
+    print(f'系統: {random_category}')
 
 if __name__ == "__main__":
     display_random_color()
