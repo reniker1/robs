@@ -13,7 +13,7 @@ def display_random_color():
             random_color = random.choice(head_colors)
         else:
             random_color = random.choice(colors)
-        print(f'{part}の色: {random_color}')
+        print(f'{part}: {random_color}')
 
     random_category = random.choice(category)
     print(f'系統: {random_category}')
