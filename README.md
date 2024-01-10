@@ -19,7 +19,7 @@
 
 *  ```robs```のレポジトリで
 ```
-Python3 robs.py
+python3 robs.py
 ```
 を入力
 
