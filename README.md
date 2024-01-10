@@ -2,7 +2,7 @@
 
 ![test](https://github.com/reniker1/robs/actions/workflows/test.yml/badge.svg)
 
-ランダムで服の色や系統を提案する
+服の色や系統を提案する
 
 ## 必要なソフトウェア
 
