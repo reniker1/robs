@@ -11,14 +11,14 @@ def display_random_color():
     body_parts = ['帽子', 'ウェア', 'パンツ', 'シューズ']
     
     for i, part in enumerate(body_parts):
-        if part == '帽子':
+        if part == '帽子'
             random_color = random.choice(head_colors)
         else:
             random_color = random.choice(colors)
-        print(f'{part}: {random_color}')
+        print(f'{part} {random_color}')
 
     random_category = random.choice(category)
-    print(f'系統: {random_category}')
+    print(f'系統 {random_category}')
 
 if __name__ == "__main__":
     display_random_color()
