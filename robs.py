@@ -1,6 +1,6 @@
 # SPDX-FileCopyrightText: 2024 Ren Imai
 # SPDX-License-Identifier: BSD-3-Clause
-#!/usr/bin/python3
+#!/usr/bin/python
 
 import random
 
