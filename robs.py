@@ -1,24 +1,25 @@
 # SPDX-FileCopyrightText: 2024 Ren Imai
 # SPDX-License-Identifier: BSD-3-Clause
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
 import random
 
-def display_random_color():
-    category = ['カジュアル', 'スポーツ', 'ストリート']
-    colors = ['白', '黒', '赤', 'グレー', 'ベージュ', '青', '緑', '紫', 'オレンジ']
-    head_colors = ['無', 'ニット', 'キャップ', ]
-    body_parts = ['帽子', 'ウェア', 'パンツ', 'シューズ']
-    
-    for i, part in enumerate(body_parts):
-        if part == '帽子':
+def display_random_outfit(season):
+    colors = ['白', '黒', '赤']
+    head_colors = ['無', '白', '黒']
+
+    print(f'{season}のコーディネート:')
+
+    for part in ['頭', '上半身', '下半身', '靴']:
+        if part == '頭':
             random_color = random.choice(head_colors)
         else:
             random_color = random.choice(colors)
-        print(f'{part} {random_color}')
+        print(f'{part}のランダムな色: {random_color}')
 
-    random_category = random.choice(category)
-    print(f'系統 {random_category}')
+    random_style = random.choice(['カジュアル', 'スポーツ', 'ストリート'])
+    print(f'ランダムな系統: {random_style}')
 
 if __name__ == "__main__":
-    display_random_color()
+    season = input("季節を入力してください（春、夏、秋、冬）: ")
+    display_random_outfit(season)
