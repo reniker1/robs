@@ -34,5 +34,5 @@ def display_random_outfit(season):
     print(f'系統 {random_style}')
 
 if __name__ == "__main__":
-    season = input("季節を入力してください(春、夏、秋、冬)= ")
+    season = input("季節を入力してください(春、夏、秋、冬)=")
     display_random_outfit(season)
