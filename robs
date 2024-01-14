@@ -24,9 +24,9 @@ def display_random_outfit(season):
     print(f'コーディネート')
 
     random_head_element = random.choice(head_elements)
-    print(f'頭のランダムな帽子 {random_head_element}')
+    print(f'帽子 {random_head_element}')
     
-    for part in ['帽子', 'トップス', 'ボトムス', 'シューズ']:
+    for part in ['トップス', 'ボトムス', 'シューズ']:
         random_color = random.choice(colors)
         print(f'{part} {random_color}')
     
