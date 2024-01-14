@@ -5,21 +5,27 @@
 import random
 
 def display_random_outfit(season):
-    colors = ['白', '黒', '赤', '青', 'ベージュ', '紫', '緑']
-    head_colors = ['キャップ', 'ニット帽', '無']
-    
+    if season == '春':
+        colors = ['黒', '白', 'ピンク', '黄緑']
+    elif season == '夏':
+        colors = ['赤', '黒', '水色', '白', '水色']
+    elif season == '秋':
+        colors = ['ベージュ', '茶色', '黄色', '赤']
+    elif season == '冬':
+        colors = ['白', '水色', '黒']
+    else:
+        print("無効な季節です。春、夏、秋、冬のいずれかを入力してください。")
+        return
+
     print(f'コーディネート')
     
-    for part in ['帽子', 'トップス', 'ボトムス', 'シューズ']:
-        if part == '帽子':
-            random_color = random.choice(head_colors)
-        else:
-            random_color = random.choice(colors)
+    for part in ['頭', '上半身', '下半身', '靴']:
+        random_color = random.choice(colors)
         print(f'{part} {random_color}')
     
     random_style = random.choice(['カジュアル', 'スポーツ', 'ストリート'])
     print(f'系統 {random_style}')
 
 if __name__ == "__main__":
-    season = input("季節はいつですか（春、夏、秋、冬） ")
+    season = input("季節を入力してください（春、夏、秋、冬）: ")
     display_random_outfit(season)
