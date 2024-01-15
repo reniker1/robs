@@ -1,3 +1,4 @@
 #!/bin/bash
 
-./robs
+season="夏"
+python3 robs <<< "$season"
