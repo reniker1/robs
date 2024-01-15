@@ -1,25 +1,12 @@
-  name: Run robs script
-
-  on:
-    push:
-      branches:
-        - main
-
-  jobs:
-    run_robs:
+  name: test      
+  on: push          
+  jobs:           
+    test:           
       runs-on: ubuntu-latest
-    
-      steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.8
-
-
-      - name: Run robs script
-        run: |
-          chmod +x robs
-          bash -xv ./test.bash
+      strategy:
+        matrix:
+          python-version: ["3.7", "3.8", "3.9", "3.10"]   
+      steps:                   
+      - uses: actions/checkout@v3  
+      - name: All test             
+        run: bash -xv ./test.bash  

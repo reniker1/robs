@@ -3,6 +3,7 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 import random
+import sys
 
 def display_random_outfit(season):
     if season == '春':
